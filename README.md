@@ -1,8 +1,8 @@
 # DESAFIOS
  Repositorio para entrega de desafíos del curso desarrollo de videojuegos - CoderHouse
  
- Alumnos: Matías Gómez
- 		  Hugo Centurion.
+ Alumnos: 	 Matías Gómez
+ 		 Hugo Centurion.
 		  
-Tutores: xx xx
+Tutores:	 Ramiro Ezequiel Gómez
 		 Diego Bonetto.
