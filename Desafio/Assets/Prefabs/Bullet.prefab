@@ -111,3 +111,4 @@ MonoBehaviour:
   SpeedBullet: 1
   Damage: 50
   Direction: {x: 1, y: 0, z: 0}
+  timeBomb: 5.2
