@@ -1,1 +1,1 @@
-Este ejercicio corresponde al desafío: "Instanciación de bala"
+Este ejercicio corresponde al desafío: "Disparos temporizados"
