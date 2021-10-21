@@ -38,9 +38,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Desafio_Bala\BulletControl.cs" />
      <Compile Include="Assets\Scripts\Desafio_Bala\ShowText.cs" />
-     <Compile Include="Assets\Scripts\Desafio_Bala\CanyonController.cs" />
      <Compile Include="Assets\Scripts\Desafio_Camara\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Desafio_Camara\CameraSwitch.cs" />
+     <Compile Include="Assets\Scripts\Desafio_Bala\CanyonController.cs" />
+     <None Include="Assets\Sounds\ReadMe.txt" />
     <Reference Include="UnityEngine">
         <HintPath>F:\UnityProyectos\2020.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -614,8 +615,14 @@
     <Reference Include="System.Xml.Serialization">
         <HintPath>F:\UnityProyectos\2020.3.13f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>E:\Unity_Exportados\CoderHouse\DESAFIOS\Desafio\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>E:\Unity_Exportados\CoderHouse\DESAFIOS\Desafio\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>E:\Unity_Exportados\CoderHouse\DESAFIOS\Desafio\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>E:\Unity_Exportados\CoderHouse\DESAFIOS\Desafio\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -643,12 +650,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>E:\Unity_Exportados\CoderHouse\DESAFIOS\Desafio\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>E:\Unity_Exportados\CoderHouse\DESAFIOS\Desafio\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-        <HintPath>E:\Unity_Exportados\CoderHouse\DESAFIOS\Desafio\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
