@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -290,6 +290,38 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 58677831137791325, guid: ccf7210691583c74e8019200c1c9f7e7, type: 3}
+      propertyPath: timeDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 58677831137791325, guid: ccf7210691583c74e8019200c1c9f7e7, type: 3}
+      propertyPath: timeSpawn
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 58677831137791325, guid: ccf7210691583c74e8019200c1c9f7e7, type: 3}
+      propertyPath: bulletScale
+      value: 
+      objectReference: {fileID: 714499816038236908, guid: 545f49c9597452941aca2bdc53425427, type: 3}
+    - target: {fileID: 58677831137791325, guid: ccf7210691583c74e8019200c1c9f7e7, type: 3}
+      propertyPath: bulletScale1
+      value: 
+      objectReference: {fileID: 714499816038236908, guid: 545f49c9597452941aca2bdc53425427, type: 3}
+    - target: {fileID: 58677831137791325, guid: ccf7210691583c74e8019200c1c9f7e7, type: 3}
+      propertyPath: bulletScale2
+      value: 
+      objectReference: {fileID: 714499816038236908, guid: 60a50994abf99234a833c77637d0e3f6, type: 3}
+    - target: {fileID: 58677831137791325, guid: ccf7210691583c74e8019200c1c9f7e7, type: 3}
+      propertyPath: bulletScale.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 58677831137791325, guid: ccf7210691583c74e8019200c1c9f7e7, type: 3}
+      propertyPath: bulletScale.Array.data[0]
+      value: 
+      objectReference: {fileID: 714499816038236908, guid: 545f49c9597452941aca2bdc53425427, type: 3}
+    - target: {fileID: 58677831137791325, guid: ccf7210691583c74e8019200c1c9f7e7, type: 3}
+      propertyPath: bulletScale.Array.data[1]
+      value: 
+      objectReference: {fileID: 714499816038236908, guid: 60a50994abf99234a833c77637d0e3f6, type: 3}
+    - target: {fileID: 58677831137791325, guid: ccf7210691583c74e8019200c1c9f7e7, type: 3}
       propertyPath: bulletPrefab.Array.data[0]
       value: 
       objectReference: {fileID: 5505618023029775875, guid: 545f49c9597452941aca2bdc53425427, type: 3}
@@ -428,8 +460,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.022123026, y: 0.9671839, z: -0.09051056, w: -0.23637654}
-  m_LocalPosition: {x: 1.5911111, y: 2.1450722, z: 4.787956}
+  m_LocalRotation: {x: -0.049579874, y: 0.9493687, z: -0.19522537, w: -0.2410975}
+  m_LocalPosition: {x: 6.4046407, y: 5.286564, z: 10.013711}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -447,7 +479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514f54bd6979646cbb384104db7379bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textValue: "Disparar el ca\xF1\xF3n con tecla espaciadora!"
+  textValue: "Mantener presionado la barra espaciadora para duplicar tama\xF1o de
+    bala"
   textElement: {fileID: 1503184265}
 --- !u!1 &1295739327
 GameObject:
