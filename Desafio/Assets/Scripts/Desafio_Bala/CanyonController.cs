@@ -23,7 +23,7 @@ public class CanyonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             EscalaX2();//Disparo();Test
         } else {
@@ -45,6 +45,7 @@ public class CanyonController : MonoBehaviour
     void EscalaX2(){
         bulletScale1.transform.localScale = new Vector3(0.30f,0.30f,0.30f);
         bulletScale2.transform.localScale = new Vector3(0.30f,0.30f,0.30f);
+       
         return;
     }
 
