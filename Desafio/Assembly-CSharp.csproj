@@ -40,9 +40,9 @@
      <Compile Include="Assets\Scripts\Desafio_Bala\ShowText.cs" />
      <Compile Include="Assets\Scripts\Desafio_Camara\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Desafio_Camara\CameraSwitch.cs" />
-     <Compile Include="Assets\Scripts\Desafio_Bala\CanyonController.cs" />
-     <Compile Include="Assets\Scripts\Desafio_Vectores\PlayerControllerVectores.cs" />
      <Compile Include="Assets\Scripts\Desafio_Vectores\EnemyControllerVectores.cs" />
+     <Compile Include="Assets\Scripts\Desafio_Vectores\PlayerControllerVectores.cs" />
+     <Compile Include="Assets\Scripts\Desafio_Bala\CanyonController.cs" />
      <None Include="Assets\Sounds\ReadMe.txt" />
     <Reference Include="UnityEngine">
         <HintPath>F:\UnityProyectos\2020.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

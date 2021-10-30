@@ -248,8 +248,8 @@ GameObject:
   - component: {fileID: 758395413}
   - component: {fileID: 758395412}
   - component: {fileID: 758395411}
-  - component: {fileID: 758395410}
   - component: {fileID: 758395414}
+  - component: {fileID: 758395410}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Untagged
@@ -361,8 +361,8 @@ GameObject:
   - component: {fileID: 1312668804}
   - component: {fileID: 1312668803}
   - component: {fileID: 1312668802}
-  - component: {fileID: 1312668801}
   - component: {fileID: 1312668805}
+  - component: {fileID: 1312668801}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Untagged
@@ -370,8 +370,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &1312668801
-CapsuleCollider:
+--- !u!65 &1312668801
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -380,9 +380,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1312668802
 MeshRenderer:
@@ -569,8 +568,8 @@ GameObject:
   - component: {fileID: 1489540829}
   - component: {fileID: 1489540828}
   - component: {fileID: 1489540827}
-  - component: {fileID: 1489540826}
   - component: {fileID: 1489540830}
+  - component: {fileID: 1489540826}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Untagged
@@ -578,8 +577,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &1489540826
-CapsuleCollider:
+--- !u!65 &1489540826
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -588,9 +587,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1489540827
 MeshRenderer:
@@ -668,8 +666,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dab9bf1bd94cdf4088cae1c252957c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeEnemy: 0
-  speedEnemy: 10
+  typeEnemy: 1
+  speedEnemy: 5
   speedRotation: 25
 --- !u!1 &1548034478
 GameObject:
@@ -950,7 +948,7 @@ Transform:
   m_GameObject: {fileID: 1941629586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.7188225, y: -0.6014228, z: 1.6266999}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
