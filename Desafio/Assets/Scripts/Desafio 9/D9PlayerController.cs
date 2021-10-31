@@ -6,10 +6,11 @@ public class D9PlayerController : MonoBehaviour
 
 {
     [SerializeField] private float speedPlayer;
-    //private Vector3 newPosition = new Vector3(4,1,0);
+    
     private Vector3 newPosition;
-    public float timerCountDown = 2.0f;
-    bool isPlayerColliding = false;
+    private float timerCountDown = 2.0f;
+    private bool isPlayerColliding = false;
+    public Transform wall;
 
     // Start is called before the first frame update
     void Start()
@@ -33,9 +34,9 @@ public class D9PlayerController : MonoBehaviour
                 //
                 //Debug.Log("Hit wall for 2 seconds");
                 
-                newPosition=new Vector3(Random.Range(1,6),1,Random.Range(-3,3));
-                transform.position = newPosition;
-                transform.Rotate(0,Random.Range(0,360),0);
+                newPosition=new Vector3(Random.Range(1,6),2,Random.Range(-3,3));
+                wall.position = newPosition;
+                wall.Rotate(0,Random.Range(0,360),0);
                 
                 timerCountDown = 2.0f;
                 isPlayerColliding = false;
@@ -73,7 +74,7 @@ public class D9PlayerController : MonoBehaviour
         {
             //Debug.Log(collision.gameObject.name);
             isPlayerColliding = false;
-            //timerCountDown = Time.deltaTime;
+           
         }
         
     }
