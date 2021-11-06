@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4421736, g: 0.4911852, b: 0.5710862, a: 1}
+  m_IndirectSpecularColor: {r: 0.32684243, g: 0.31915626, b: 0.274747, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -302,13 +302,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333406803}
-  m_LocalRotation: {x: 0.46672827, y: 0.6350014, z: -0.6014963, w: 0.13092107}
+  m_LocalRotation: {x: 0.43628082, y: 0.07690537, z: -0.8712693, w: -0.21126898}
   m_LocalPosition: {x: 2.37, y: 6.1, z: -3.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 62.389, y: 238.506, z: 110.099}
+  m_LocalEulerAnglesHint: {x: -2.885, y: 307.464, z: 154.164}
 --- !u!1 &367519262
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486883241}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 4.71, z: 0}
+  m_LocalPosition: {x: 0, y: 5.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1058061385}
@@ -445,10 +445,10 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 40
-  m_Range: 6.2978826
-  m_SpotAngle: 46.59993
-  m_InnerSpotAngle: 21.80208
+  m_Intensity: 90
+  m_Range: 7
+  m_SpotAngle: 21
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -1226,7 +1226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960631808}
   m_LocalRotation: {x: 0.02236258, y: -0.013610257, z: 0.0003044642, w: 0.9996573}
-  m_LocalPosition: {x: -0, y: -0.02, z: 0.06}
+  m_LocalPosition: {x: 0.02, y: 0.01, z: -0.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1699968348}
@@ -1245,8 +1245,8 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 100
-  m_Range: 9.409125
-  m_SpotAngle: 26.060852
+  m_Range: 10.530976
+  m_SpotAngle: 39.8
   m_InnerSpotAngle: 16.14476
   m_CookieSize: 10
   m_Shadows:
