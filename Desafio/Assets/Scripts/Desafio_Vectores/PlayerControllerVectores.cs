@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerControllerVectores : MonoBehaviour
 {
     [SerializeField] private float speedPlayer = 5f;
-    [SerializeField] private float rotationSpeed = 10f;
+    [SerializeField] private float rotationSpeed = 100;
     private float mouseX;
     // Start is called before the first frame update
     void Start()

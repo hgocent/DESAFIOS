@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Desafio_LucesTexturas.unity
+- path: Assets/Scenes/Desafio_Raycast.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
