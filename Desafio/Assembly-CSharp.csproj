@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Desafio_Bala\BulletControl.cs" />
      <Compile Include="Assets\Scripts\Desafio_Bala\ShowText.cs" />
      <Compile Include="Assets\Scripts\Desafio_Camara\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Desafio_Bala\GameManager.cs" />
      <Compile Include="Assets\Scripts\Desafio_Camara\CameraSwitch.cs" />
      <Compile Include="Assets\Scripts\Desafio_Vectores\EnemyControllerVectores.cs" />
      <Compile Include="Assets\Scripts\Desafio 9\D9PlayerController.cs" />
