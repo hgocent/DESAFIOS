@@ -23,16 +23,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-        RaycastPlayer();
-        
-        RotatePlayer();
+        //RaycastPlayer();
         MovePlayer();
+        RotatePlayer();
+        
 
-        if (GameManager.getLife() < 0)
+        /*if (GameManager.getLife() < 0)
         {
             Destroy(gameObject);
             Debug.Log("YOU ARE DEAD");
-        }
+        }*/
 
     }
 
@@ -75,11 +75,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * rayLenght);
-    }
+    }*/
 
 
 }
