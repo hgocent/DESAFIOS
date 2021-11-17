@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Desafio_Raycast.unity
+- path: "Assets/Scenes/Desaf\xEDoTDA.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0
