@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Portal
   - Wall
+  - Food
+  - Fruit
   layers:
   - Default
   - TransparentFX

@@ -5,8 +5,8 @@ using UnityEngine;
 public class ItemsController : MonoBehaviour
 {
     [SerializeField] private List<GameObject> Fruits = new List<GameObject>(); //List  
-    [SerializeField] private List<GameObject> Food = new List<GameObject>();
-    //[SerializeField] GameObject[] Food; //Array
+    //[SerializeField] private List<GameObject> Food = new List<GameObject>();
+    [SerializeField] GameObject[] Food; //Array
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class ItemsController : MonoBehaviour
     void OnCollisionEnter(Collision obj)
      {
         
-        if (obj.collider.tag == "Fruit")
+        if ((obj.collider.tag == "Fruit") || (obj.collider.tag == "Food"))
         {   
             //Debug.Log(obj.collider.tag);
 
@@ -31,15 +31,45 @@ public class ItemsController : MonoBehaviour
             obj.gameObject.SetActive(false);
             
         }
-        if (obj.collider.tag == "Food")
-        {   
-            //Debug.Log(obj.collider.tag);
-
-            //obj.gameObject.SetActive(false);
-            //Food.Add(GameObject);
-            //GameObject.SetActive(false);
-            
-        }
+        
      }
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
+        //Debug.Log(other.tag);
+        
+        if(other.tag == "Fruit")
+        {
+            foreach (var fruit in Fruits)
+            {
+                //Debug.Log(fruit.name);
+                fruit.SetActive(true);
+                
+                switch (fruit.name)
+                {
+                    case "Olive":
+                        GameObject.Find(fruit.name).transform.position = new Vector3(7f,2f,-7.73f);
+                        break;
+                    case "Cherry":
+                        GameObject.Find(fruit.name).transform.position = new Vector3(7.44f,2f,-8.6f);
+                        break;
+                    case "Banana":
+                        GameObject.Find(fruit.name).transform.position = new Vector3(6.54f,2f,-8.12f);
+                        break;
+                    default:
+                        break;
+                }
+                
+                
+                
+                
+                
+            }
+        }
+        
+    }
+
+    
 }

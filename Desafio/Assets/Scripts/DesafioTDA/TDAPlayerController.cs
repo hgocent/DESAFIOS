@@ -26,14 +26,14 @@ public class TDAPlayerController : MonoBehaviour
 
     void Update()
     {
-        Move();
-        RotatePlayer();
+
      
     }
 
     private void FixedUpdate()
     {
-
+        Move();
+        RotatePlayer();
     }
 
     private void Move()
