@@ -9,21 +9,18 @@ public class TDAPlayerController : MonoBehaviour
     [SerializeField] private float speedPlayer = 10f;
     [SerializeField] private float speedTurn= 7f;
 
-    //[SerializeField] private Animator animPlayer;
-    //[SerializeField] private AudioClip punchSound;
-    //[SerializeField] private AudioClip walkSound;
     [SerializeField] private GameObject mPlayer;
 
-    //private AudioSource audioPlayer;
+    
     private Rigidbody rbPlayer;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //audioPlayer = GetComponent<AudioSource>();
+    
         rbPlayer = GetComponent<Rigidbody>();
-        //animPlayer.SetBool("isRun", false);
+
         SetPlayerRotation();
     }
 
@@ -31,16 +28,7 @@ public class TDAPlayerController : MonoBehaviour
     {
         Move();
         RotatePlayer();
-        /*if (Input.GetKeyDown(KeyCode.Space))
-        {
-            audioPlayer.PlayOneShot(punchSound, 1f);
-            animPlayer.SetBool("isPunch", true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            animPlayer.SetBool("isPunch", false);
-        }*/
+     
     }
 
     private void FixedUpdate()
@@ -57,14 +45,11 @@ public class TDAPlayerController : MonoBehaviour
             //animPlayer.SetBool("isRun", true);
             rbPlayer.AddRelativeForce(Vector3.forward * speedPlayer * ejeVertical, ForceMode.Force);
             rbPlayer.AddRelativeForce(Vector3.right  * speedPlayer * ejeHorizontal, ForceMode.Force);
-            /*if (!audioPlayer.isPlaying)
-            {
-                audioPlayer.PlayOneShot(walkSound, 0.5f);
-            }*/
+           
         }
         else
         {
-            //animPlayer.SetBool("isRun", false);
+            
             ResetVelocities();
         }
     }
@@ -75,27 +60,7 @@ public class TDAPlayerController : MonoBehaviour
             SetPlayerRotation();
         }
     }
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            lifePlayer--;
-            Destroy(collision.gameObject);
-            if(lifePlayer < 0)
-            {
-                Debug.Log("GAME OVER");
-            }
-        }
-        
-    }*/
-
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Generator"))
-        {
-            other.gameObject.GetComponent<GeneratorController>().setNewColor(Color.black);
-        }
-    }*/
+    
 
     private void SetPlayerRotation()
     {
