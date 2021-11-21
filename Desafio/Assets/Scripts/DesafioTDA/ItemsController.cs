@@ -6,7 +6,7 @@ public class ItemsController : MonoBehaviour
 {
     [SerializeField] private List<GameObject> Fruits = new List<GameObject>(); //List  
     //[SerializeField] private List<GameObject> Food = new List<GameObject>();
-    [SerializeField] GameObject[] Food; //Array
+    [SerializeField] private GameObject[] Food; //Array
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +42,7 @@ public class ItemsController : MonoBehaviour
         
         if(other.tag == "Fruit")
         {
-            foreach (var fruit in Fruits)
+            foreach (GameObject fruit in Fruits) //foreach (var fruit in Fruits)
             {
                 //Debug.Log(fruit.name);
                 fruit.SetActive(true);
@@ -60,15 +60,37 @@ public class ItemsController : MonoBehaviour
                         break;
                     default:
                         break;
-                }
-                
-                
-                
-                
+                } 
                 
             }
         }
-        
+
+        if(other.tag == "Food")
+        {
+
+            foreach (GameObject food in Food) 
+            {
+                
+                food.SetActive(true);
+                
+                switch (food.name)
+                {
+                    case "Hotdog":
+                        GameObject.Find(food.name).transform.position = new Vector3(6.86f,2f,2.34f);
+                        break;
+                    case "Hamburger":
+                        GameObject.Find(food.name).transform.position = new Vector3(6.31f,2f,2.83f);
+                        break;
+                    case "Cheese":
+                        GameObject.Find(food.name).transform.position = new Vector3(6.31f,2f,1.94f);
+                        break;
+                    default:
+                        break;
+                } 
+
+            }
+
+        }
     }
 
     
